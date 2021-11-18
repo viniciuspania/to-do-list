@@ -1,128 +1,139 @@
 *,
 *:before,
 *:afetr {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient( 135deg, #22c4ecea, #3cd2ec64);
+  height: 100vh;
+  background: linear-gradient(45deg, #1588a5ea, #3cd2ec64);
 }
-
 
 /* Alinhamento dos forms */
 
 .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 40px;
+  width: 50vw;
+  margin: auto;
+  margin-top: 3rem;
 }
 
-
-/* Seguro o form para criar uma nova tarefa */
+/* Segura o form para criar uma nova tarefa */
 
 #novaTarefa {
-    background-color: #fff;
-    position: relative;
-    min-width: 500px;
-    padding: 30px 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  position: relative;
+  min-width: 500px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Foco do input nova tarefa  */
 
 #novaTarefa input:focus {
-    outline-color: rgba(0, 0, 0, 0.3);
+  outline-color: rgba(0, 0, 0, 0.3);
 }
-
 
 /* Input pra pegar dados da tarefa */
 
-#novaTarefa input {
-    width: 70%;
-    height: 20px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    color: #111111;
-    font-size: 15px;
-    padding: 10px;
-    border: 1px solid #d1d1d1;
-    position: relative;
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.title p {
+    font-size: 1.2rem;
+    color: #111111;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 3px 5px 2px #474747;
+}
+
+#novaTarefa input {
+  width: 70%;
+  height: 20px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #111111;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #d1d1d1;
+  position: relative;
+}
 
 /* Botão de adicionar uma nova tarefa */
 
 #novaTarefa button {
-    position: relative;
-    height: 40px;
-    font-size: 15px;
-    width: 20%;
-    padding: 10px;
-    float: right;
-    border-radius: 5px;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    background-color: #22c4ecea;
-    color: #111111;
-    font-weight: 600;
-    cursor: pointer;
+  position: relative;
+  height: 55px;
+  font-size: 1.2rem;
+  transition: all ease .5s;
+  width: 20%;
+  float: right;
+  border-radius: 5px;
+  border: 0;
+  background-color: #169dbeea;
+  color: #111111;
+  font-weight: 600;
+  cursor: pointer;
 }
-
 
 /* Segura todas as novas tarefas criadas */
 
 #tarefas {
-    background-color: #fff;
-    position: relative;
-    margin-top: 70px;
-    padding: 30px 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  position: relative;
+  margin-top: 3rem;
+  transition: all ease .5s;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Div que segura cada nova tarefa */
 
 .tarefasCriadas {
-    height: 50px;
-    padding: 5px 10px;
-    margin-top: 15px;
-    display: flex;
-    border-bottom: 2px solid #d1d2d3;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
+  height: 5vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: all ease .5s;
+  display: flex;
+  border-bottom: 2px solid #d1d2d3;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
 }
-
 
 /* Texto da nova tarefa inserida  */
 
 .tarefasCriadas span {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
-
 
 /* Botão de excluir tarefa criada */
 
 .tarefasCriadas button {
-    padding: 10px;
-    background-color: #22c4ecea;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 1rem;
+  background-color: #169dbeea;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* Marca a tarefa como finalizada */
 .finalizada {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
